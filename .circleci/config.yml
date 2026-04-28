@@ -3,14 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.9
-    working_directory: ~/calculator
+    working_directory: ~/mypassword
     steps:
       - checkout
       - run:
           name: Install dependencies
           command: |
             python3 -m pip install --upgrade pip
-            python3 -m venv calculator
+            python3 -m venv virtfile
             . calculator/bin/activate
             pip install -r requirements.txt
       - run:
